@@ -1,0 +1,45 @@
+
+
+.main-navbar {
+  padding: 1rem;
+  background: #578ee0;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  img{
+    width: 250px;
+    height: 50px;
+  }
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/*===== Below is the style for the Home Section*/
+
+.homeSection{
+  background: #57e05e;
+  background-image: url('./assets/WelcomeBG.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 39rem;
+  width: 100%;
+  margin-top: 5.5%;
+  
+}
