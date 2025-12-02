@@ -2,44 +2,97 @@
 
 .main-navbar {
   padding: 1rem;
-  background: #578ee0;
-  color: white;
+  background: #ffffff;
   display: flex;
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
   position: fixed;
   top: 0;
+  right: 0;
   width: 100%;
-
-  img{
-    width: 250px;
-    height: 50px;
+}
+.navLogo{
+  display: flex;
+  align-items: center;
+  color: rgb(253, 55, 6);
+  span{
+    color: black;
+    font-size: medium;
   }
+  img{
+    width: 120px;
+    height: 55px;
+    margin-left: 2rem;
+  }
+}
+.allNavLinks{
 }
 
 .nav-link {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-size: 25px;
 }
-
 .nav-link:hover {
-  background-color: #555;
+  color: rgb(253, 55, 6);
 }
 
 /*===== Below is the style for the Home Section*/
-
 .homeSection{
-  background: #57e05e;
+  display: flex;
+  flex-direction: column;
+}
+.welcomeSection{
   background-image: url('./assets/WelcomeBG.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
-  height: 39rem;
+  height: 50rem;
   width: 100%;
-  margin-top: 5.5%;
-  
+  margin-top: 4%;
+
+  text-align: center;
+  align-items: center;
+
+  .heading{
+    color: azure;
+    font-size: 30px;
+    width: 60%;
+    text-align: left;
+    margin-left: 7%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 7%;
+    
+  }
+
+}
+.aboutSection{
+  display: flex;
+  flex-direction: column;
+  background: #a2f7be;
+  height: 50rem;
+  padding: 10% 5% 0 7%;
+  h2{
+    font-size: 3rem;
+    #wSpan{
+      font-size: 4rem;
+    }
+  }
+
+  .aboutPars{
+    background: blueviolet;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    div{
+      width: 50%;
+    }
+  }
+
+
 }
