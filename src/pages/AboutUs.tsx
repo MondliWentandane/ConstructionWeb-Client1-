@@ -7,18 +7,20 @@ const AboutUs:React.FC = () => {
       <div className='aboutSect'>
         <div>
             <h1>About Us</h1>
-            <h3>Building More Than Structures</h3>
-            <p>At Keystone Construction, we don't just pour concrete or raise beams—we lay the 
+            <p><strong>Building More Than Structures</strong> <br/>
+                At <span className='keyword'>Keystone Construction</span>, we don't just pour concrete or raise beams—we lay the 
                 foundations of the future. Every project is a testament to human ingenuity and the 
                 power of vision meeting determination.</p>
-            <h3>Our Vision: Your Dreams, Realized</h3>   
-            <p>We believe that every great structure begins with an even greater dream. Our mission 
+              
+            <p><strong>Our Vision: Your Dreams, Realized</strong> <br />
+                We believe that every great structure begins with an even greater dream. Our mission 
                 is to transform your vision from blueprints into a tangible, lasting reality. We thrive 
                 on the challenge of getting around obstacles and seeing a project stand tall, a monument 
                 to the power of imagination and hard work.</p> 
+            <button>Read More...</button>
         </div>
         <img src={aboutImg} alt="" />            
-        </div>
+      </div>
     </div>
   )
 }

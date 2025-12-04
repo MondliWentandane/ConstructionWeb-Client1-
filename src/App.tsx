@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
+import ProjectGallary from './pages/ProjectGallary';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/projectR'element={<Project />}/>
         <Route path='/contactR' element={<Contact />}/>
         <Route path='/aboutR' element={<AboutUs />}/>
+        <Route path='/projectGallaryR' element={<ProjectGallary />}/>
       </Routes>
     </Router>
   )
