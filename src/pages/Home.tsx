@@ -1,9 +1,43 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
+import WelcomeBG1 from '../assets/WelcomeBG.jpeg';
+import WelcomeBG2 from '../assets/WelcomeBG2.jpeg';
+import WelcomeBG3 from '../assets/cardImg3.webp';
 
 const Home:React.FC = () => {
+  const backgroundImages = [
+    WelcomeBG1,
+    WelcomeBG2,
+    WelcomeBG3
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(false);
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => 
+          (prevIndex + 1) % backgroundImages.length
+        );
+        setIsAnimating(true);
+      }, 100);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className='homeSection'>
       <div className='welcomeSection'>
+        <div 
+          className={`backgroundImage ${isAnimating ? 'zoom-out' : ''}`}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.212), 
+            rgba(7, 7, 7, 0.25)), url(${backgroundImages[currentImageIndex]})`
+          }}
+        />
         <div className='heading'>
           <h1>Transforming <br />Houses into Homes</h1>
           <h3>Keystone Construction 'Building & Renovation' is dedicated to building lasting relationships with clients 
@@ -18,11 +52,10 @@ const Home:React.FC = () => {
             <i>We are dedicated to building the foundations of your future, turning architectural aspirations into 
             solid, enduring realities.</i><br /><br /><br />
             <p><span>Why Choose Keystone Construction?</span><br /> The name "Keystone" defines our philosophy: the central stone at the summit of an arch, locking the whole 
-               structure together. This symbolizes the essential role we play in the success of your project. Here’s why 
+               structure together. This symbolizes the essential role we play in the success of your project. Here's why 
                we are the right partner for your next build:</p>
           </div>          
           <div>
-            
             <p><span>Uncompromising Craftsmanship:</span> <br />At Keystone Construction, we don't just build structures; we craft legacies. We use superior materials and 
                employ highly skilled tradespeople who deliver exceptional quality and durability in every fixture and 
                finish.</p>
