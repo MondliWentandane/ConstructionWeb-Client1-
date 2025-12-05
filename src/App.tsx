@@ -1,6 +1,7 @@
 import {Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home'
 import Services from './pages/Services';
 import Project from './pages/Project';
@@ -21,6 +22,7 @@ function App() {
         <Route path='/aboutR' element={<AboutUs />}/>
         <Route path='/projectGallaryR' element={<ProjectGallary />}/>
       </Routes>
+      <Footer/>
     </Router>
   )
 }
