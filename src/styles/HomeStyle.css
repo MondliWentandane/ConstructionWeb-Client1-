@@ -1,0 +1,162 @@
+/*===== Below is the style for the Home Section*/
+.homeSection{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  
+}
+.welcomeSection{
+  position: relative;
+  height: 50rem;
+  width: 100%;
+  margin-top: 4%;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  transform: rotateX('20');
+
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .backgroundImage.zoom-out {
+    animation: zoomOut 7s ease-out forwards;
+  }
+  .backgroundImage.fade-in {
+    opacity: 1 !important;
+  }
+
+  .heading{
+    position: relative;
+    z-index: 1;
+    color: azure;
+    font-size: 30px;
+    width: 60%;
+    text-align: left;
+    margin-left: 7%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 7%;
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.aboutSection{
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  padding: 10% 5% 0 7%;
+  h2{
+    font-size: 3rem;
+    line-height: 90%;
+    #wSpan{
+      font-size: 4rem;
+    }
+  }
+
+  .aboutPars{
+    display: inline-flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 25px;
+    align-items: end;
+    div{
+      width: 40%;
+      height: fit-content;
+      p span{
+        font-weight: bold;
+      }
+      i{
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+
+/*==== ABout to add Media Querires ====*/
+
+@media (width < 1600px){
+    .heading{
+        h1{
+            font-size: 48px;
+        }
+        h3{
+            font-size: 28px;
+        }
+    }
+
+    .aboutSection{
+        height: 30rem;
+  h2{
+    font-size: 2rem;
+    line-height: 90%;
+    #wSpan{
+      font-size: 3rem;
+    }
+  }
+  .aboutPars{
+    font-size: 20px;
+  }
+}
+
+}
+
+@media (width < 1300px){
+    .heading{
+        h1{
+            font-size: 48px;
+        }
+        h3{
+            font-size: 25px;
+        }
+    }
+}
+
+@media (width < 1000px){
+       .welcomeSection .heading {
+    width: 90%;
+
+  }
+    .aboutSection{
+        display: flex;
+        flex-direction: column;
+         height: 40rem;
+         
+        .aboutPars{
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+        align-items: start;
+        margin-bottom: 100px;
+        div{
+            width: 100%;
+        }
+        
+    }}
+}
+
+@media (width < 500px){
+    .aboutSection{
+         height: 55rem;}
+}
+
+@media (width < 500px){
+    .aboutSection{
+         height: 62rem;}
+}

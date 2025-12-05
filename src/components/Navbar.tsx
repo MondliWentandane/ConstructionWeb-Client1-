@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import navLog from '../assets/Logo1.png'
 import '../styles/NavbarStyle.css';
+import '../styles/FooterStyle.css'
 
 const Navbar: React.FC = () => {
   return (
