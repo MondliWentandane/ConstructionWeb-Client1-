@@ -1,0 +1,43 @@
+.main-navbar {
+  padding: 1rem;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0px 0px 15px;
+  z-index: 1000;
+}
+.navLogo{
+  display: flex;
+  align-items: center;
+  color: rgb(253, 55, 6);
+  span{
+    color: black;
+    font-size: medium;
+  }
+  img{
+    width: 120px;
+    height: 55px;
+    margin-left: 2rem;
+  }
+}
+.allNavLinks{
+  transition: 3s
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 25px;
+}
+.nav-link:hover {
+  color: rgb(253, 55, 6);
+}

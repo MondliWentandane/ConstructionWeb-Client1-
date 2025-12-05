@@ -1,49 +1,5 @@
 
 
-.main-navbar {
-  padding: 1rem;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  box-shadow: 0px 0px 15px;
-  z-index: 1000;
-}
-.navLogo{
-  display: flex;
-  align-items: center;
-  color: rgb(253, 55, 6);
-  span{
-    color: black;
-    font-size: medium;
-  }
-  img{
-    width: 120px;
-    height: 55px;
-    margin-left: 2rem;
-  }
-}
-.allNavLinks{
-  transition: 3s
-}
-
-.nav-link {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-size: 25px;
-}
-.nav-link:hover {
-  color: rgb(253, 55, 6);
-}
-
 /*=== Below is the style for Footer ===*/
 .mainFooterSection{
   width: 100%;
@@ -139,6 +95,7 @@
   transform: rotateX('20');
 
   .backgroundImage {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -147,10 +104,14 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
+    transition: opacity 1s ease-in-out;
   }
 
   .backgroundImage.zoom-out {
     animation: zoomOut 7s ease-out forwards;
+  }
+  .backgroundImage.fade-in {
+    opacity: 1 !important;
   }
 
   .heading{
@@ -167,10 +128,10 @@
   }
 }
 @keyframes zoomOut {
-  50% {
+  0% {
     transform: scale(1.2);
   }
-  0% {
+  100% {
     transform: scale(1);
   }
 }
@@ -274,6 +235,9 @@
   }
 
 }
+/*==== More Services Style ====*/
+
+
 
 /*== Below is the style for the About Us section*/
 .aboutP{
@@ -292,7 +256,7 @@
   width: 80%;
   padding-right: 7%;
   align-items: end;
-  button{
+  .button{
     background: #912727;
     color: azure;
     font-size: x-large;
@@ -464,3 +428,81 @@
       }
   }
 }
+
+/*=== Bellow is the style for the form====*/
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(5px); 
+    
+    /* Centering the modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+/* 2. Modal Content: The centered form container */
+.modal-content {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 40%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 3. Close Button */
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #666;
+}
+
+/* 4. Form Layout */
+.theForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 99%;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+
+    input{
+      width: 95%;
+      height: 35px;
+      border-radius: 15px;
+      font-size: large;
+      border-width: 1px;
+      padding-left: 1%;
+    }
+    textarea{
+      width: 95%;
+      height: 120px;
+      border-radius: 15px;
+      font-size: large;
+      padding-left: 1%;
+    }
+    .btn{
+      width: 20%;
+      height: 2.4rem;
+      align-self: flex-start;
+      margin-left: 2%;
+      border-radius: 15px;
+      font-size: large;
+      color: #ffffff;
+      background: #000000;
+    }
+    
+}
+

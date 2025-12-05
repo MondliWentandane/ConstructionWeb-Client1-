@@ -1,5 +1,4 @@
 import React from 'react'
-import bgImg from '../assets/bgService.jpeg';
 import cardImg1 from '../assets/cardImg.webp';
 import cardImg2 from '../assets/cardImg2.jpg';
 import cardImg3 from '../assets/cardImg3.webp';

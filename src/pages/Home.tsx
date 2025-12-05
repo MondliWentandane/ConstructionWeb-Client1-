@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import WelcomeBG1 from '../assets/WelcomeBG.jpeg';
 import WelcomeBG2 from '../assets/WelcomeBG2.jpeg';
-import WelcomeBG3 from '../assets/cardImg3.webp';
+import WelcomeBG3 from '../assets/WelcomeBG4.jpeg';
 
 const Home:React.FC = () => {
   const backgroundImages = [
@@ -12,30 +12,41 @@ const Home:React.FC = () => {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(true);
+  const [nextImageIndex, setNextImageIndex] = useState(1);
+  const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsAnimating(false);
+      setFadeIn(true);
+      
       setTimeout(() => {
-        setCurrentImageIndex((prevIndex) => 
-          (prevIndex + 1) % backgroundImages.length
-        );
-        setIsAnimating(true);
-      }, 100);
+        setCurrentImageIndex(nextImageIndex);
+        setNextImageIndex((nextImageIndex + 1) % backgroundImages.length);
+        setFadeIn(false);
+      }, 1000); // Crossfade duration
     }, 7000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [nextImageIndex]);
 
   return (
     <div className='homeSection'>
       <div className='welcomeSection'>
+        {/* Current background image */}
         <div 
-          className={`backgroundImage ${isAnimating ? 'zoom-out' : ''}`}
+          className="backgroundImage zoom-out"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.212), 
             rgba(7, 7, 7, 0.25)), url(${backgroundImages[currentImageIndex]})`
+          }}
+        />
+        {/* Next background image for crossfade */}
+        <div 
+          className={`backgroundImage zoom-out ${fadeIn ? 'fade-in' : ''}`}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.212), 
+            rgba(7, 7, 7, 0.25)), url(${backgroundImages[nextImageIndex]})`,
+            opacity: fadeIn ? 1 : 0
           }}
         />
         <div className='heading'>
