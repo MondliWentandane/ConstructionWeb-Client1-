@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import aboutImg from '../assets/aboutImg.png';
+import aboutImgPhone from '../assets/beforeAfter.png';
 import { AnimatePresence, motion } from "motion/react";
+import '../styles/AboutUsStyle.css';
 
 const AboutUs:React.FC = () => {
   const [isMoreInfoVisible, setIsMoreInfoVisible] = useState(false);
@@ -19,6 +21,7 @@ const AboutUs:React.FC = () => {
   return (
     <div className='aboutP'>
       <div className='aboutSect'>
+        <img src={aboutImgPhone} alt="" className='phoneImg' /> 
         <div>
             <h1>About Us</h1>
             <p><strong>Building More Than Structures</strong> <br/>
@@ -44,7 +47,7 @@ const AboutUs:React.FC = () => {
                         {isMoreInfoVisible ? "Read Less" : "Read More..."}
                     </motion.button>
         </div>
-        <img src={aboutImg} alt="" />            
+        <img src={aboutImg} alt="" className='formalImg'/>            
       </div>
     </div>
   )

@@ -72,47 +72,11 @@
       }
     }
   }
-
 }
 /*==== More Services Style ====*/
 
-
-
 /*== Below is the style for the About Us section*/
-.aboutP{
-  width: 100%;
-  height: 100%;
-  padding-top: 10%;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 8%;
-}
-.aboutSect{
-  display: flex;
-  flex-direction: row;
-  gap: 6%;
-  width: 80%;
-  padding-right: 7%;
-  align-items: end;
-  .button{
-    background: #912727;
-    color: azure;
-    font-size: x-large;
-    padding: 0.5rem;
-    border-radius: 17px;
-    transition: 1s;
-  }
-  button:hover{
-    background: #5e1717;
-  }
-  .keyword{
-    color: #912727;
-  }
-   strong{
-    font-size: 28px;
-   }
-}
+
 
 /*==== Below is the style for the Projects Section==*/
 
