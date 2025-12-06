@@ -1,0 +1,215 @@
+ 
+ .projectsPage{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 9%;
+  padding-bottom: 10%;
+  text-align: center;
+  align-items: center;
+  
+  .projectSectIntro{
+    width: 100%;
+    
+  }
+  .projectSectPros{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2%;
+    width: fit-content;
+    align-items: center;
+    
+
+    .bothSide{
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      width: 400px;
+      height: 20%;
+      img{
+        width: 400px;
+        height: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .proCard{
+        box-shadow: 1.5px 3px 1.5px #c9d5e2;
+        border-radius: 10px;
+      }
+    }
+    .middleProCard{
+      width: 403px;
+      height: 57.2rem;
+      background-position: center;
+      background-size: cover;
+      align-content: center;
+      border-radius: 10px;
+      .button{
+        padding: 3%;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 20px;
+        background: #b13d35;
+        color: #ffffff;
+        border-width: 0px;
+      }
+
+      img{
+        width: 403px;
+        height: 56rem;
+      }
+    }
+    .secMidd{
+        display: none;
+    }
+
+  }
+}
+
+  
+@media (width < 1600px){
+  .projectsPage .projectSectPros{
+    gap: 1%;
+    
+    .bothSide{
+      gap: 0.5rem;
+      width: 350px;
+      height: 20%;
+      img{
+        width: 350px;
+        height: 300px;
+      }
+    }
+  }  
+
+    .projectsPage .projectSectPros .middleProCard{
+        width: 333px;
+        height: 46.2rem;
+        img{
+            width: 333px;
+            height: 46rem;
+        }
+    }
+
+}
+
+@media (width < 1110px){
+
+     .projectsPage{
+        margin-top: 15%;
+     }
+
+  .projectsPage .projectSectPros{
+    .bothSide{
+      width: 280px;
+      height: 18%;
+      img{
+        width: 280px;
+        height: 230px;
+      }
+    }
+  }  
+    .projectsPage .projectSectPros .middleProCard{
+        width: 307px;
+    }
+}
+
+@media (width < 900px){
+
+    .projectsPage{
+        margin-top: 22%;
+
+     }
+
+  .projectsPage .projectSectPros{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2%;
+    width: 96%;
+
+    .bothSide{
+      width: 85%;
+      height: 28rem;
+      display: flex;
+      flex-direction: row;
+      gap: 0.8rem;
+      img{
+        width: 100%;
+        height: 60%;
+      }
+    }
+  }  
+    .projectsPage .projectSectPros .middleProCard{
+        width: 85%;
+        height: 100px;
+        background: none;
+        .button{
+            padding: 2%;
+            font-size: 19px;
+        }
+    }
+}
+
+@media (width < 650px){
+    .projectsPage{
+        margin-top: 29%;
+
+     }
+  .projectsPage .projectSectPros{
+    gap: 3.2%;
+    width: 96%;
+
+    .bothSide{
+      width: 88%;
+      height: 20rem;
+      padding-bottom: 2%;
+      .proDesc{
+        padding: 0% 0% 3% 0%;
+      }
+      img{
+        width: 100%;
+        height: 45%;
+      }
+    }
+  }  
+}
+
+@media (width < 600px){
+        .projectsPage{
+        margin-top: 32%;
+
+     }
+
+  .projectsPage .projectSectPros{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2%;
+    width: 100%;
+
+    .bothSide{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: center;
+      .proCard{
+        width: 80%;
+      }
+      img{
+        width: 100%;
+        height: 10rem;
+      }
+    }
+  }  
+    .projectsPage .projectSectPros .middleProCard{
+        display: none;
+    }
+    .projectsPage .projectSectPros .secMidd{
+        display: block;
+    }
+}

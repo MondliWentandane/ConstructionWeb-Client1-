@@ -6,6 +6,7 @@ import pro6 from '../assets/pro6.jpeg';
 import { Link } from 'react-router-dom';
 // Import motion from the correct package
 import { motion } from "motion/react"; 
+import '../styles/ProjectStyle.css';
 
 const Project: React.FC = () => {
     
@@ -96,6 +97,9 @@ const Project: React.FC = () => {
                                 remodels equally, with expertise and dedication.</p>            
                         </div>
                     </motion.div>          
+                </div>
+                <div className='middleProCard secMidd'>
+                    <Link to='/projectGallaryR' className='button'>View More</Link>
                 </div>
             </div>
         </div>

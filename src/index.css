@@ -79,69 +79,11 @@
 
 
 /*==== Below is the style for the Projects Section==*/
-
-.projectsPage{
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 9%;
-  padding-bottom: 10%;
-  text-align: center;
-  align-items: center;
-  .projectSectIntro{
-    width: 100%;
-  }
-  .projectSectPros{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.2%;
-    width: 65.8%;
-    align-items: center;
-    
-
-    .bothSide{
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      width: 400px;
-      height: 20%;
-      img{
-        width: 400px;
-        height: 300px;
-      }
-      .proCard{
-        box-shadow: 1.5px 3px 1.5px #c9d5e2;
-        border-radius: 10px;
-      }
-    }
-    .middleProCard{
-      width: 403px;
-      height: 57.2rem;
+.projectSectPros{
+      .middleProCard{
       background-image: linear-gradient(#00000094)
                         ,url(./assets/middleImg.jpeg);
-      background-position: center;
-      background-size: cover;
-      align-content: center;
-      .button{
-        padding: 3%;
-        text-decoration: none;
-        font-size: 22px;
-        border-radius: 20px;
-        background: #b13d35;
-        color: #ffffff;
-        border-width: 0px;
-      }
-
-      img{
-        width: 403px;
-        height: 56rem;
-      }
-    }
-
-  }
+      }                  
 }
 
 /*=== Below is the style for the Project Gallary*/
