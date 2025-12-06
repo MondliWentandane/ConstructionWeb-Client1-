@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import InstaIcon from '../assets/icons/instaIcon.png';
 import ContactDes from '../assets/ContactDes.jpeg';
 import { AnimatePresence, motion } from "motion/react"; 
+import '../styles/ContactStyle.css';
 
 // --- Modal Component ---
 const ContactModal = ({ onClose }: { onClose: () => void }) => {
@@ -60,6 +61,9 @@ const Contact: React.FC = () => {
 
     return (
         <div className='contactSect'>
+            <div className='phoneCont'>
+                <h1>Let Build Together your Home..</h1>
+            </div>
             <div className='content'>
                 <div className='redCont'>
                     <h1>CONTACT  US</h1>
