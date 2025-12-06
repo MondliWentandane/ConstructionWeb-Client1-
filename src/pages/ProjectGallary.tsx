@@ -1,6 +1,7 @@
 import React from 'react';
 // Import motion
 import { motion } from "motion/react"; 
+import '../styles/ProjectGallaryStyle.css';
 
 import b1 from '../assets/before/b1.jpeg';
 import b2 from '../assets/before/b2.jpeg';

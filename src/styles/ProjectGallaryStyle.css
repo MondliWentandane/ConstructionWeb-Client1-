@@ -1,0 +1,93 @@
+
+
+
+.GalaryPage{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: fit-content;
+  margin-top: 5%;
+  padding-top: 5%;
+  align-items: center;
+  padding-bottom: 10%;
+  .beforePro{
+    display: inline-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+
+  }
+  h1{
+    font-size: 45px;
+  }
+  img{
+    width: 32%;
+    height: 25rem;
+    border-radius: 18px;
+    box-shadow: 1.5px 3px 1.5px #c9d5e2;
+  }
+  .afterSect{
+    display: inline-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+    
+  }
+  .borderGallary{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000000;
+    padding: 8% 0 5% 0;
+  }
+}
+
+/*== Bellow is the style for the Media Queres ===*/
+
+@media (width < 1400px){
+    .GalaryPage img{
+    width: 32%;
+    height: 18rem;
+
+    }
+}
+
+@media (width < 900px){
+    .GalaryPage{
+        padding-top: 25%;
+    }
+    .GalaryPage img{
+    width: 30%;
+    height: 15rem;
+
+    }
+}
+
+@media (width < 500px){
+    .GalaryPage{
+        padding-top: 40%;
+        gap: 0.5rem;
+    }
+    .GalaryPage img{
+    width: 40%;
+    height: 10rem;
+
+    }
+}
+
+@media (width < 350px){
+    .GalaryPage{
+        padding-top: 40%;
+    }
+
+    .GalaryPage img{
+    width: 40%;
+    height: 7rem;
+
+    }
+
+}
