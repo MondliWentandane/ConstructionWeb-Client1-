@@ -62,7 +62,7 @@ const Home:React.FC = () => {
         <div className='aboutPars'>
           <div>
             <i>We are dedicated to building the foundations of your future, turning architectural aspirations into 
-            solid, enduring realities.</i><br />
+            solid, enduring realities.</i><br /> <br className='brActive'/>
             <p><span>Why Choose Keystone Construction?</span><br /> The name "Keystone" defines our philosophy: the central stone at the summit of an arch, locking the whole 
                structure together. This symbolizes the essential role we play in the success of your project. Here's why 
                we are the right partner for your next build:</p>

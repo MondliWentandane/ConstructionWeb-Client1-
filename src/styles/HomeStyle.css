@@ -83,7 +83,11 @@
       }
       i{
         font-weight: bolder;
+        
       }
+      .brActive{
+          display: none;
+        }
     }
   }
 }
@@ -153,7 +157,27 @@
 
 @media (width < 500px){
     .aboutSection{
-         height: 55rem;}
+         height: 55rem;
+         .aboutPars{
+          padding-top: 5%;
+
+            div{
+              .brActive{
+                  display: block;
+                }
+            }
+         }
+        }
+        
+
+    .heading{
+      h1{
+         font-size: 29px;
+      }
+      h3{
+         font-size: 22px;
+      }
+    }      
 }
 
 @media (width < 365px){

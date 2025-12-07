@@ -117,6 +117,12 @@
   }
 }
 @media (width < 470px){
+  .mainFooterSection{
+    padding-bottom: 5%;
+  }
+  .mainFooterSection .contentContainerFooter{
+    padding-bottom: 7%;
+  }
     .mainFooterSection .contentContainerFooter .footerSectOne{
         display: flex;
           flex-direction: row;
