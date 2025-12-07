@@ -75,7 +75,7 @@
 }
 
 .theCards::-webkit-scrollbar-thumb {
-  background: #0d63f8;
+  background: #86382d;
   border-radius: 10px;
 }
 
@@ -127,7 +127,7 @@
 }
 
 #btnDiv button:hover {
-  background-color: #0d63f8;
+  background-color: #000000;
   color: white;
   transform: scale(1.05);
 }
@@ -191,12 +191,14 @@
 }
 
 @media (width < 555px){
-    .cardsSect{
-        background: yellowgreen;
+    .servicePage{
+        padding-top: 20%;
 
+        h1{
+            font-size: 34px;
+        }
     }
     .theCards{
-        background: violet;
         padding: 0% 5%;
     }
 
@@ -222,14 +224,6 @@
 }
 
 @media (width < 440px){
-        .cardsSect{
-        background: yellowgreen;
-
-    }
-    .theCards{
-        background: violet;
-        padding: 0% 5%;
-    }
 
   .card{
     width: 85%;

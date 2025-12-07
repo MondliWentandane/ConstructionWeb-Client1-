@@ -151,4 +151,23 @@
   .navLogo span{
     font-size: 10px;
   }
+  .main-navbar{
+    padding: 0.5rem 2rem 0.5rem 1rem;
+  }
+
+  .navLogo{
+      display: flex;
+      align-items: center;
+      color: rgb(253, 55, 6);
+      z-index: 1001;
+      h3{
+        font-size: 14px;
+      }
+    }
+
+    .navLogo span{
+      color: black;
+      font-size: 12px;
+    }
+
 }

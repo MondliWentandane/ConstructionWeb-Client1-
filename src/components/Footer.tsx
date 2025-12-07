@@ -15,7 +15,7 @@ const Footer:React.FC = () => {
                 <p><strong>Limpopo Office<hr/></strong>
                     3 Boskok Avenue <br/>
                     Fuana Park<br/>
-                    Polokwane </p>
+                    Polokwane </p> <br id='theId'/>
                 
                 <p><strong>Phone<hr/></strong>
                     068 881 1921</p>

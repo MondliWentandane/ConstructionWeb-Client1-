@@ -35,8 +35,12 @@
         margin-left: 15%;
         color: #912727;
       }
+      
 
     }
+    #theId{
+        display: none;
+      }
     .footerSectTwo{
       display: flex;
       flex-direction: column;
@@ -151,4 +155,7 @@
           justify-content: space-between;
           width: 100%;
       }
+      .contentContainerFooter .footerSectTwo #theId{
+        display: block;
+      }   
 }

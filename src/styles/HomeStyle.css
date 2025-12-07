@@ -156,6 +156,9 @@
 }
 
 @media (width < 500px){
+  .welcomeSection{
+    height: 22rem;
+    }
     .aboutSection{
          height: 55rem;
          .aboutPars{
@@ -172,10 +175,10 @@
 
     .heading{
       h1{
-         font-size: 29px;
+         font-size: 22px;
       }
       h3{
-         font-size: 22px;
+         font-size: 15px;
       }
     }      
 }
