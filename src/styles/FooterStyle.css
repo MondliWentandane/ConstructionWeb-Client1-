@@ -85,6 +85,7 @@
   .mainFooterSection .contentContainerFooter{
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
     height: fit-content;
   }
   .mainFooterSection .contentContainerFooter .footerSectOne{
