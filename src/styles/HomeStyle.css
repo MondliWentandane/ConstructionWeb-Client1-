@@ -90,7 +90,7 @@ font-family: "Alan Sans", sans-serif;
       }
       i{
         font-weight: bolder;
-        
+        color: rgba(0, 0, 0, 0.795);
       }
       .brActive{
           display: none;
