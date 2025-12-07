@@ -139,7 +139,7 @@
 @media (width < 1385px){
 
     .contactSect{
-        padding-top: 10%;
+        padding-top: 0%;
     }
     .contactSect .content .redCont{
         font-size: 25px;
@@ -198,7 +198,7 @@
         position: relative;
         background-color: white;
         padding: 20px;
-        width: 70%;
+        width: 80%;
     }
 
 }
@@ -221,8 +221,8 @@
     /*=== Below is the style for the form ===*/
 
     .modal-content {
-        padding: 20px;
-        width: 80%;
+        padding: 30px 7px;
+        width: 90%;
     }
     .theForm{
             font-size: 28px;
