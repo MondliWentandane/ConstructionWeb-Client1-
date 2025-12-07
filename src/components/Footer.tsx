@@ -12,26 +12,22 @@ const Footer:React.FC = () => {
                 <img src={InstaIcon} alt=""  className='icon'/>
             </div>
             <div className="footerSectTwo">
-                <p><h2>Limpopo Office<hr/></h2>
-                    3 Boskok Avenue <br/><br /><br /><br />
-                    Fuana Park<br/><br /><br /><br />
+                <p><strong>Limpopo Office<hr/></strong>
+                    3 Boskok Avenue <br/>
+                    Fuana Park<br/>
                     Polokwane </p>
                 
-                <p><h2>Phone<hr/></h2>
+                <p><strong>Phone<hr/></strong>
                     068 881 1921</p>
                 
             </div>
             <div className='footerSectThree'>
-                <p><h2>Office Hours<hr/></h2>
-                    Monday → Friday <br /><br /><br /><br />
-                    08:00am → 16:00pm</p>
-                <p><h2>Email<hr/></h2>
+                <p><strong>Office Hours<hr/></strong>
+                    Monday → Friday <br />
+                    08:00am → 16:00pm</p> <br />
+                <p><strong>Email<hr/></strong>
                     keystoneconstructionpty@gmail.com</p>
-                              
-            </div>
-            <div className='devContact'>
-                <h4>Contact the designer: +27 78 177 5837 | mondli46401@gmail.com </h4>
-            </div>
+                  </div>
         </div>      
     </div>
   )

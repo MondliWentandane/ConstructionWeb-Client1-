@@ -1,5 +1,5 @@
 .main-navbar {
-  padding: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -12,22 +12,36 @@
   box-shadow: 0px 0px 15px;
   z-index: 1000;
 }
+
 .navLogo{
   display: flex;
   align-items: center;
   color: rgb(253, 55, 6);
-  span{
-    color: black;
-    font-size: medium;
-  }
-  img{
-    width: 120px;
-    height: 55px;
-    margin-left: 2rem;
-  }
+  z-index: 1001;
 }
+
+.navLogo span{
+  color: black;
+  font-size: medium;
+}
+
+.navLogo img{
+  width: 120px;
+  height: 55px;
+  margin-left: 2rem;
+}
+
 .allNavLinks{
-  transition: 3s
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+  color: rgb(0, 0, 0);
 }
 
 .nav-link {
@@ -35,9 +49,104 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
   font-size: 25px;
 }
+
 .nav-link:hover {
   color: rgb(253, 55, 6);
+}
+
+/*==== Below is the Responsiveness style ====*/
+
+@media (width < 1030px){
+  .navLogo{
+    display: flex;
+    align-items: center;
+    color: rgb(253, 55, 6);
+  }
+  
+  .navLogo span{
+    color: black;
+    font-size: 15px;
+  }
+  
+  .navLogo h3{
+    font-size: medium;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 19px;
+  }
+}
+
+@media (width < 900px){
+  .navLogo span{
+    color: black;
+    font-size: 12px;
+  }
+  
+  .navLogo h3{
+    font-size: 15px;
+  }
+  
+  .nav-link {
+    padding: 0.3rem;
+    font-size: 19px;
+  }
+}
+
+@media (width < 830px){
+  .menu-icon {
+    display: block;
+  }
+
+  .allNavLinks {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 42vh;
+    width: 70%;
+    max-width: fit-content;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    padding: 1rem;
+  }
+
+  .allNavLinks.active {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 22px;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-link:hover {
+    background-color: #f8f8f8;
+    color: rgb(253, 55, 6);
+  }
+
+  .navLogo img{
+    width: 80px;
+    height: 45px;
+    margin-left: 0.5rem;
+  }
+
+  .navLogo h3{
+    font-size: 12px;
+  }
+
+  .navLogo span{
+    font-size: 10px;
+  }
 }

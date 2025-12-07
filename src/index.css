@@ -1,7 +1,21 @@
 
 
 
+/* Add this at the very top of index.css */
+* {
+  box-sizing: border-box;
+}
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100vw;
+}
+
+/* Then your other existing styles below... */
 
 
 
