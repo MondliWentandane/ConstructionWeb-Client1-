@@ -63,12 +63,17 @@
 
 @media (width < 550px){
     .aboutP{
-        padding-top: 38%;
+        padding-top: 12%;
     }
+  
+    /*==============*/
     .aboutSect{
         display: flex;
         flex-direction: column;
         gap: 0.5%;
+        width: 95%;
+        padding-right: 0%;
+        align-items: end;
         strong{
             font-size: 22px;
         }
@@ -87,6 +92,9 @@
 }
 
 @media (width < 450px){
+    .aboutP{
+        padding-top: 20%;
+    }
     .aboutSect{
           .button{
                 font-size: medium;

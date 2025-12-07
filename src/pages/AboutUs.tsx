@@ -27,7 +27,7 @@ const AboutUs:React.FC = () => {
             <p><strong>Building More Than Structures</strong> <br/>
                 At <span className='keyword'>Keystone Construction</span>, we don't just pour concrete or raise beams—we lay the 
                 foundations of the future. Every project is a testament to human ingenuity and the 
-                power of vision meeting determination.</p>
+                power of vision meeting determination.</p> <br />
               
             <p><strong>Our Vision: Your Dreams, Realized</strong> <br />
                 We believe that every great structure begins with an even greater dream. Our mission 

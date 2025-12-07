@@ -140,14 +140,14 @@
     .aboutSection{
         display: flex;
         flex-direction: column;
-         height: 40rem;
+         height: fit-content;
+         padding-bottom: 5%;
          
         .aboutPars{
         display: flex;
         flex-direction: column;
         gap: 1%;
         align-items: start;
-        margin-bottom: 100px;
         div{
             width: 100%;
         }
@@ -160,22 +160,30 @@
     height: 22rem;
     }
     .aboutSection{
-         height: 55rem;
+         height: fit-content;
+           h2{
+          font-size: 1.4rem;
+          line-height: 90%;
+          #wSpan{
+            font-size: 2rem;
+          }
+        }
          .aboutPars{
           padding-top: 5%;
-
+          font-size: 18px;
             div{
               .brActive{
                   display: block;
                 }
             }
+            
          }
         }
-        
+        /*   ==================== */        
 
     .heading{
       h1{
-         font-size: 22px;
+         font-size: 24px;
       }
       h3{
          font-size: 15px;
@@ -184,6 +192,4 @@
 }
 
 @media (width < 365px){
-    .aboutSection{
-         height: 68rem;}
 }
