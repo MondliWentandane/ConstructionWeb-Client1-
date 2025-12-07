@@ -38,6 +38,7 @@
           font-size: 30px;
           padding: 3%;
           width: 70%;
+          color: #752626;
         }
        
       }
@@ -175,6 +176,9 @@
 }
 
 @media (width < 990px){
+  .contactSect{
+        padding-top: 5%;
+    }
     .contactSect .content .redCont{
         font-size: 15px;
         width: 100%;
@@ -203,7 +207,10 @@
 
 }
 
-@media (width < 500px){
+@media (width < 656px){
+  .contactSect{
+        padding-top: 0%;
+    }
     .contactSect .content{
         width: 100%;
 

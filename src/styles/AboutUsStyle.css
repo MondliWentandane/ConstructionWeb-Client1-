@@ -61,7 +61,7 @@
     }
 }
 
-@media (width < 550px){
+@media (width < 676px){
     .aboutP{
         padding-top: 12%;
     }

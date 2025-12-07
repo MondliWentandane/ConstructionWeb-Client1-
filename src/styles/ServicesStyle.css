@@ -85,7 +85,7 @@
 
 .card{
   background: #fdfeffb4;
-  width: 29%;
+  width: 30%;
   flex-shrink: 0;
   height: fit-content;
   padding: 0.8%;
@@ -132,7 +132,27 @@
   transform: scale(1.05);
 }
 
+@media (width < 1395px){
+    .card{
+        font-size: 17px;
+        }
+
+        .contentCard{
+        width: 100%;
+        height: 90%;
+    }
+    #btnDiv button{
+        padding: 1% 2% 1% 2%;
+        font-size: 17px;
+        font-weight: bold;
+        width: 75%;
+    }
+}
+
 @media (width < 1220px){
+  .servicePage{
+    padding-top: 10%;
+  }
     .card{
         width: 29%;
         min-width: 29%;
@@ -225,6 +245,9 @@
 
 @media (width < 440px){
 
+  .servicePage{
+        padding-top: 20%;
+  }
   .card{
     width: 85%;
     font-size: 13px;
@@ -240,4 +263,11 @@
     font-weight: bold;
     width: 75%;
     }
+}
+
+@media (width < 350px){
+
+  .servicePage{
+        padding-top: 30%;
+  }
 }

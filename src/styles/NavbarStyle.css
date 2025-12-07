@@ -59,16 +59,8 @@
 }
 
 /*==== Below is the Responsiveness style ====*/
-
-@media (width < 1030px){
-  .navLogo{
-    display: flex;
-    align-items: center;
-    color: rgb(253, 55, 6);
-  }
-  
+@media (width < 1156px){
   .navLogo span{
-    color: black;
     font-size: 15px;
   }
   
@@ -79,6 +71,28 @@
   .nav-link {
     padding: 0.5rem 1rem;
     font-size: 19px;
+  }
+}
+
+@media (width < 990px){
+  .navLogo{
+    display: flex;
+    align-items: center;
+    color: rgb(253, 55, 6);
+  }
+  
+  .navLogo span{
+    color: black;
+    font-size: 13px;
+  }
+  
+  .navLogo h3{
+    font-size: 15px;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 17px;
   }
 }
 
