@@ -209,7 +209,14 @@
 
         .redCont button{
             width: fit-content;
+            
         }
+        .redCont .icon{
+              display: none;
+            }
+        .redCont{
+          padding: 8% 4%;
+        }    
 
         .wallPa{
             display: none;
