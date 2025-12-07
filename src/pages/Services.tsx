@@ -51,16 +51,6 @@ const Services: React.FC = () => {
     <div className='servicePage'>
         <div style={{width:"100%", height:"fit-content",}}><h1>Our Capabilities</h1></div>
         <div className='cardsSect'>
-            <svg id="scroll-progress" width="80" height="80" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
-                <motion.circle
-                    cx="50"
-                    cy="50"
-                    r="30"
-                    className="indicator"
-                    style={{ pathLength: scrollXProgress }}
-                />
-            </svg>
             <motion.div className='theCards' ref={containerRef} style={{ maskImage }}>
                 <div className='card'>
                     <img src={cardImg1} alt=""/>
