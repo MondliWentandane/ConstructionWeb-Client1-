@@ -6,21 +6,139 @@ import '../styles/ContactStyle.css';
 
 // --- Modal Component ---
 const ContactModal = ({ onClose }: { onClose: () => void }) => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        cellno: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        try {
+            const response = await fetch('https://client1backend-ryan-production.up.railway.app/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                setSubmitStatus('success');
+                // Reset form
+                setFormData({
+                    name: '',
+                    email: '',
+                    cellno: '',
+                    message: ''
+                });
+                // Close modal after 2 seconds
+                setTimeout(() => {
+                    onClose();
+                }, 2000);
+            } else {
+                setSubmitStatus('error');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setSubmitStatus('error');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
     const FormContent = (
-        <form className='theForm'>
+        <form className='theForm' onSubmit={handleSubmit}>
             <h3>Send Us a Message</h3>
-            <input type="text" placeholder="Full Name" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="tel" placeholder="Phone Number" />
-            <textarea placeholder="Tell us about your project..." rows={4} required />
+            
+            {submitStatus === 'success' && (
+                <div style={{ 
+                    padding: '10px', 
+                    backgroundColor: '#4CAF50', 
+                    color: 'white', 
+                    borderRadius: '5px', 
+                    marginBottom: '15px',
+                    textAlign: 'center'
+                }}>
+                    ✓ Message sent successfully! We'll contact you soon.
+                </div>
+            )}
+            
+            {submitStatus === 'error' && (
+                <div style={{ 
+                    padding: '10px', 
+                    backgroundColor: '#f44336', 
+                    color: 'white', 
+                    borderRadius: '5px', 
+                    marginBottom: '15px',
+                    textAlign: 'center'
+                }}>
+                    ✗ Failed to send message. Please try again.
+                </div>
+            )}
+
+            <input 
+                type="text" 
+                name="name"
+                placeholder="Full Name" 
+                value={formData.name}
+                onChange={handleChange}
+                required 
+                disabled={isSubmitting}
+            />
+            <input 
+                type="email" 
+                name="email"
+                placeholder="Email Address" 
+                value={formData.email}
+                onChange={handleChange}
+                required 
+                disabled={isSubmitting}
+            />
+            <input 
+                type="tel" 
+                name="cellno"
+                placeholder="Phone Number" 
+                value={formData.cellno}
+                onChange={handleChange}
+                disabled={isSubmitting}
+            />
+            <textarea 
+                name="message"
+                placeholder="Tell us about your project..." 
+                rows={4} 
+                value={formData.message}
+                onChange={handleChange}
+                required 
+                disabled={isSubmitting}
+            />
             <motion.button 
                 type="submit" 
                 className='btn'
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+                whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+                whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
+                disabled={isSubmitting}
+                style={{ 
+                    opacity: isSubmitting ? 0.6 : 1,
+                    cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                }}
             >
-                Send Request
+                {isSubmitting ? 'Sending...' : 'Send Request'}
             </motion.button>
         </form>
     );
@@ -66,8 +184,8 @@ const Contact: React.FC = () => {
             </div>
             <div className='content'>
                 <div className='redCont'>
-                    <h1>CONTACT  US</h1>
-                    <strong>Let’s discuss your project <br />
+                    <h1>CONTACT  US</h1>
+                    <strong>Let's discuss your project <br />
                         requirements <br />
                         and schedule a consultation <br />
                         with our team</strong> <br />
@@ -76,7 +194,7 @@ const Contact: React.FC = () => {
                         onClick={toggleModal}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className='quote-btn' // New class for the main button
+                        className='quote-btn'
                     >
                         Request a Quote
                     </motion.button> 

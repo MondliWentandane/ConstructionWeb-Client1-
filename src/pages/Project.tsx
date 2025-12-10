@@ -1,6 +1,6 @@
 import React from 'react';
-import pro1 from '../assets/pro1.jpeg';
-import pro2 from '../assets/pro2.jpeg';
+import pro1 from '../assets/AlumPro.jpeg';
+import pro2 from '../assets/WelcomeBG.jpeg';
 import pro4 from '../assets/pro4.jpeg';
 import pro6 from '../assets/pro6.jpeg';
 import { Link } from 'react-router-dom';
@@ -41,11 +41,9 @@ const Project: React.FC = () => {
                     >
                         <img src={pro1} alt="" />
                         <div className="proDesc">
-                            <h3>RESIDENTIAL REMODEL</h3>
-                            <p>Residential remodeling is our bread and butter. 
-                                It is the backbone of our business. Our top designers 
-                                and contractors can take on small changes, and larger 
-                                remodels equally, with expertise and dedication.</p>            
+                            <h3>Aluminium Installation</h3>
+                            <p>Old window frames were removed, and replaced with new 
+                                Charcoal Aluminium windows</p>            
                         </div>
                     </motion.div>
                     <motion.div
@@ -55,11 +53,9 @@ const Project: React.FC = () => {
                     >
                         <img src={pro2} alt="" />
                         <div className="proDesc">
-                            <h3>RESIDENTIAL REMODEL</h3>
-                            <p>Residential remodeling is our bread and butter. 
-                                It is the backbone of our business. Our top designers 
-                                and contractors can take on small changes, and larger 
-                                remodels equally, with expertise and dedication.</p>            
+                            <h3>House Renovation</h3>
+                            <p>Old carpet was removed, and install with Viryl planks along with 
+                                matching skirting boards</p>            
                         </div>
                     </motion.div>
                 </div>
@@ -76,11 +72,9 @@ const Project: React.FC = () => {
                     >
                         <img src={pro4} alt="" />
                         <div className="proDesc">
-                            <h3>RESIDENTIAL REMODEL</h3>
+                            <h3>Kitchen Remodel</h3>
                             <p>Residential remodeling is our bread and butter. 
-                                It is the backbone of our business. Our top designers 
-                                and contractors can take on small changes, and larger 
-                                remodels equally, with expertise and dedication.</p>            
+                                A new kitchen was installed, along with new plumbing fixtures</p>            
                         </div>
                     </motion.div>
                     <motion.div
@@ -90,11 +84,9 @@ const Project: React.FC = () => {
                     >
                         <img src={pro6} alt="" />
                         <div className="proDesc">
-                            <h3>RESIDENTIAL REMODEL</h3>
-                            <p>Residential remodeling is our bread and butter. 
-                                It is the backbone of our business. Our top designers 
-                                and contractors can take on small changes, and larger 
-                                remodels equally, with expertise and dedication.</p>            
+                            <h3>Bathroom Remodel</h3>
+                            <p>A new bathroom was renovated, along with new vanity cabinet and 
+                                plumbing fixtures</p>            
                         </div>
                     </motion.div>          
                 </div>
