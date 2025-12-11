@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from '../assets/Logo1.png';
-import InstaIcon from '../assets/icons/instaIcon.png';
 
 const Footer:React.FC = () => {
   return (
@@ -9,11 +8,10 @@ const Footer:React.FC = () => {
             <div className='footerSectOne'>
                 <img src={Logo} alt="" className='Logo' />
                 <h3>KEYSTONE CONSTRUCTION <br /> Building & Renovation</h3>
-                <img src={InstaIcon} alt=""  className='icon'/>
             </div>
             <div className="footerSectTwo">
                 <p><strong>Limpopo Office<hr/></strong>
-                    3 Boskok Avenue <br/>
+                    3 Bosbok Avenue <br/>
                     Fuana Park<br/>
                     Polokwane </p> <br id='theId'/>
                 
@@ -24,7 +22,7 @@ const Footer:React.FC = () => {
             <div className='footerSectThree'>
                 <p><strong>Office Hours<hr/></strong>
                     Monday → Friday <br />
-                    08:00am → 16:00pm</p> <br />
+                    08:00am → 16:00pm</p> <br className='diAcvt' />
                 <p><strong>Email<hr/></strong>
                     keystoneconstructionpty@gmail.com</p>
                   </div>

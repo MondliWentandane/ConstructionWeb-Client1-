@@ -11,28 +11,25 @@
     flex-direction: row;
     justify-content: space-between;
     border-radius: 20px;
-    padding: 0% 5% 1% 5%;
+    padding: 3% 5% 2% 5%;
     background-color: #000000;
     width: 95%;
     color: #ffffff;
-    padding-top: 3%;
+    hr{
+      width: 60%;
+    }
 
     .footerSectOne{
       display: flex;
       flex-direction: column;
       gap: 2%;
-      justify-content: left;
+      justify-content: end;
       width: 28%;
-
-      .icon{
-        width: 70px;
-        padding-left: 10%;
-      }
       .Logo{
-        width: 16rem;
+        width: 8rem;
       }
       h3{
-        margin-left: 15%;
+        margin-left: 10%;
         color: #912727;
       }
       
@@ -53,7 +50,7 @@
     .footerSectThree{
       display: flex;
       flex-direction: column;
-      gap: 1%;
+      gap: 2%;
       width: 35%;;
       p{
          font-size: 22px;
@@ -66,21 +63,30 @@
 /*==== ABout to add Media Querires ====*/
 
 @media (width < 860px){
-     .mainFooterSection .contentContainerFooter .footerSectOne .Logo{
-            width: 13rem;
-          }
+     .mainFooterSection .contentContainerFooter .footerSectOne{
 
+         width: 28%;
+      .Logo{
+        width: 8rem;
+      }
+      h3{
+        margin-left: 10%;
+        color: #912727;
+        font-size: 90%;
+      }
+    }
 
     .mainFooterSection .contentContainerFooter .footerSectTwo{
-      p{
-         font-size: medium;
-      }
+     p{
+      font-size: 95%;}
     }   
     
     .mainFooterSection .contentContainerFooter .footerSectThree{
-
+     .diAcvt{
+      line-height: 80%;
+     }
       p{
-         font-size: medium;
+         font-size: 98%;
       }
     }
     
@@ -96,8 +102,9 @@
   .mainFooterSection .contentContainerFooter .footerSectOne{
     display: flex;
       flex-direction: row;
-      gap: 2%;
+      gap: 0%;
       justify-content: left;
+      align-items: end;
       width: 100%;
       .icon{
         width: 70px;
@@ -108,8 +115,9 @@
     .mainFooterSection .contentContainerFooter .footerSectTwo{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       width: 100%;
+      justify-content: left;
+      gap: 6%;
       p{
          font-size: large;
       }
@@ -117,7 +125,6 @@
     .mainFooterSection .contentContainerFooter .footerSectThree{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       width: 100%;
   }
 }
@@ -132,7 +139,7 @@
         display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          gap: 2%;
+          gap: 0%;
           justify-content: left;
           width: 100%;
           .icon{
@@ -157,5 +164,6 @@
       }
       .contentContainerFooter .footerSectTwo #theId{
         display: block;
-      }   
-}
+        }
+
+        }

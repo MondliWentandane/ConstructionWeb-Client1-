@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="nav-link" onClick={closeMenu}>
             Home
           </Link>
-          <Link to="/aboutR" className="nav-link" onClick={closeMenu}>
+          <Link to="/#about-section" className="nav-link" onClick={closeMenu}>
             About Us
           </Link>
           <Link to="/serviceR" className='nav-link' onClick={closeMenu}>

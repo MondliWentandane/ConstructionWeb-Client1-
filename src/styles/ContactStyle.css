@@ -22,7 +22,12 @@
     background: #752626;
     justify-content: space-between;
     .icon{
-        width: 70px;
+        width: 80px;
+        height: 60px;
+      }
+      .icon2{
+        width: 40px;
+        height: 40px;
       }
       .wallPa{
         width: 30rem;
@@ -150,7 +155,12 @@
           padding: 3%;
           width: 70%;
         }
+        .icon{
+        width: 60px;
+      }
+
     }
+
 
     .contactSect .content .wallPa{
         width: 25rem;
@@ -188,6 +198,16 @@
           padding: 1%;
           width: 70%;
         }
+         .icon{
+        width: 40px;
+        height: 45px;
+        margin-top: 1%;
+      }
+      .icon2{
+        width: 30px;
+        height: 30px;
+        margin-top: 2%;
+      }
        
     }
      .contactSect .content .wallPa{
@@ -219,7 +239,8 @@
             
         }
         .redCont .icon{
-              display: none;
+          margin-top: 1.5%;
+              width: 50px;
             }
         .redCont{
           padding: 8% 4%;

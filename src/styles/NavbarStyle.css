@@ -17,7 +17,7 @@
 .navLogo{
   display: flex;
   align-items: center;
-  color: rgb(253, 55, 6);
+  color: rgb(175, 44, 11);
   z-index: 1001;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .nav-link:hover {
-  color: rgb(253, 55, 6);
+  color: rgb(187, 46, 11);
 }
 
 /*==== Below is the Responsiveness style ====*/
@@ -78,7 +78,7 @@
   .navLogo{
     display: flex;
     align-items: center;
-    color: rgb(253, 55, 6);
+    color: rgb(161, 40, 10);
   }
   
   .navLogo span{
@@ -149,7 +149,7 @@
 
   .nav-link:hover {
     background-color: #f8f8f8;
-    color: rgb(253, 55, 6);
+    color: rgb(163, 42, 12);
   }
 
   .navLogo img{
@@ -172,7 +172,7 @@
   .navLogo{
       display: flex;
       align-items: center;
-      color: rgb(253, 55, 6);
+      color: rgb(163, 42, 12);
       z-index: 1001;
       h3{
         font-size: 14px;

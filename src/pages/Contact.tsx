@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import InstaIcon from '../assets/icons/instaIcon.png';
+import FaceBookIcon from '../assets/icons/facebookIcon.png';
 import ContactDes from '../assets/ContactDes.jpeg';
+import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from "motion/react"; 
 import '../styles/ContactStyle.css';
 
@@ -200,7 +202,14 @@ const Contact: React.FC = () => {
                     </motion.button> 
                     
                     <br /> 
-                    <img src={InstaIcon} alt="" className='icon'/>
+                    <div style={{display: "inline-flex", alignItems: "center",height:"11%"}}>
+                        <Link to="https://www.instagram.com/keystoneconstructionpty?igsh=MWZ1eWo5bzdubmdrYQ==">
+                            <img src={InstaIcon} alt="" className='icon'/>
+                        </Link>
+                        <Link to="https://www.facebook.com/profile.php?id=61583967405442">
+                            <img src={FaceBookIcon} alt="" className='icon2'/>
+                        </Link>
+                    </div>
                 </div>
                 <img src={ContactDes} alt="" className='wallPa' />
             </div>
