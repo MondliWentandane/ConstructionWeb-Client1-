@@ -176,7 +176,7 @@ font-family: "Alan Sans", sans-serif;
 @media (width < 600px){
   .aboutSection{
     h2{
-      font-size: 18px;}
+      font-size: 20px;}
     }
   .welcomeSection{
     height: 22rem;
