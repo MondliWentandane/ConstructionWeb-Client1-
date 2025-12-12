@@ -182,7 +182,7 @@ const Contact: React.FC = () => {
     return (
         <div className='contactSect'>
             <div className='phoneCont'>
-                <h1>Let Build Together your Home..</h1>
+                <h1>Let's Build Together your Home..</h1>
             </div>
             <div className='content'>
                 <div className='redCont'>

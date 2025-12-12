@@ -94,7 +94,7 @@ foundations of the future.</i> <br /><br />
                  power of vision meeting determination. We believe that every great structure begins with an even greater dream.</p> <br />
             <p><span style={{color: "#9e0d0dff", fontSize:"120%", fontWeight: "bold"}}>Our mission </span>is to transform your vision from blueprints into a tangible, lasting reality.
                 We thrive on the challenge of getting around obstacles and seeing a project stand tall, a monument to 
-                 the power of imagination and hard work.</p>
+                 the power of imagination and hard work.</p> <br />
 
              <p>The bitterness of poor quality remains
                     long after the sweetness of low price is forgotten". This principle guides every
