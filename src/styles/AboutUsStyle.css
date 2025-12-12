@@ -72,6 +72,7 @@
     }
     .mobileImg{
       display: block;
+      height: 30rem;
     }
     .abtContext{
         width: 100%;
@@ -80,16 +81,23 @@
   }
 }
 
-@media (width < 676px){
+@media (width < 646px){
 .aboutSect{
   .button{
     font-size: large;
     padding: 0.5rem;
   }
+  .mobileImg{
+      height: 20rem;
+    }
 }
 
 }
 
 @media (width < 450px){
-
+.aboutSect{
+  .mobileImg{
+      height: 13rem;
+    }
+}
 }

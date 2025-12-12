@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useMotionValue, useMotionValueEvent, animate, MotionValue } from 'framer-motion';
 import cardImg1 from '../assets/cardImg.webp';
-import cardImg2 from '../assets/cardImg2.jpg';
+import cardImg2 from '../assets/Decorative.jpeg';
 import cardImg3 from '../assets/cardImg3.webp';
-import cardImg4 from '../assets/fans2.jpeg';
+import cardImg4 from '../assets/fansDesk.jpeg';
 import '../styles/ServicesStyle.css';
 
 const left = `0%`;
@@ -56,7 +56,7 @@ const Services: React.FC = () => {
 
   const servicesData = [
     {
-      title: "Kitchen & Bathroom Makeovers",
+      title: "Commercial & Home Renovations",
       description: "Revamping essential home spaces with functional designs, improved layouts, and modern finishes that add value and comfort.",
       items: [
         "Kitchen Cabinets",
@@ -65,7 +65,8 @@ const Services: React.FC = () => {
         "Aluminium Window & Doors",
         "Drywalling",
         "Interior & Exterior Painting",
-        "Roof Painting"
+        "Roof Painting",
+        "Plumbing"
       ],
       image: cardImg1
     },
@@ -83,7 +84,7 @@ const Services: React.FC = () => {
       image: cardImg3
     },
     {
-      title: "Commercial & Home Renovations",
+      title: "Decorative Floor & Wall Finishes",
       description: "Transforming interior spaces with modern designs, improved layouts, and high-quality finishes to elevate your entire living experience.",
       items: [
         "Floors",

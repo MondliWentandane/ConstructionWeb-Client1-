@@ -13,8 +13,12 @@ import b7 from '../assets/before/b7.jpeg';
 import b8 from '../assets/before/b8.jpeg';
 
 import a1 from '../assets/after/a1.jpeg'
-import a2 from '../assets/after/a2.jpeg'
-import a3 from '../assets/after/a3.jpeg'
+import a2 from '../assets/AlumPro.jpeg'
+import a3 from '../assets/fansDesk.jpeg'
+import a11 from '../assets/fans1.jpeg';
+import a12 from '../assets/fans2.jpeg';
+import a13 from '../assets/Decorative.jpeg';
+
 import a4 from '../assets/after/a4.jpeg'
 import a5 from '../assets/after/a5.jpeg'
 import a6 from '../assets/after/a6.jpeg'
@@ -43,7 +47,7 @@ const ProjectGallary: React.FC = () => {
     });
 
     const beforeImages = [b1, b2, b3, b4, b5, b6, b7, b8];
-    const afterImages = [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10];
+    const afterImages = [a1, a2, a3,a11, a12,a13, a4, a5, a6, a7, a8, a9, a10 ];
 
     return (
         <div className='GalaryPage'>
