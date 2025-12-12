@@ -174,6 +174,10 @@ font-family: "Alan Sans", sans-serif;
 }
 
 @media (width < 600px){
+  .aboutSection{
+    h2{
+      font-size: 18px;}
+    }
   .welcomeSection{
     height: 22rem;
     }

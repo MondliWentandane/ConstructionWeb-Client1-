@@ -90,6 +90,9 @@
   .mobileImg{
       height: 20rem;
     }
+    .abtContext strong{
+      font-size: 18px;
+    }
 }
 
 }
